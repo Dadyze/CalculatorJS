@@ -1,0 +1,109 @@
+body{
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: blue;
+    font-size: 32px;
+}
+.container{
+    border:5px solid grey;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px white;
+}
+
+.display{
+    border-bottom: 1px solid black;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.dugmad{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "AC AC DEL posto"
+                        "jedan dva tri puta"
+                        "cetiri pet sest saberi"
+                        "sedam osam devet oduzmi"
+                        "tacka nula jednako jednako";
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+button{
+    padding:30px 35px;
+    background-color: black;
+    border:1px solid grey;
+    color: grey;
+    font-size: 22px;
+}
+button:active{
+    border:none;
+}
+button:hover{
+    background-color: white;
+    color:black
+}
+
+
+
+#AC{
+    grid-area: AC;
+}
+#DEL{
+    grid-area:DEL;
+}
+#posto{
+    grid-area:posto;
+}
+#jedan{
+    grid-area:jedan;
+}
+#dva{
+    grid-area: dva;
+}
+#tri{
+    grid-area: tri;
+}
+#cetiri{
+    grid-area: cetiri;
+}
+#pet{
+    grid-area: pet;
+}
+#sest{
+    grid-area: sest;
+}
+#sedam{
+    grid-area: sedam;
+}
+#osam{
+    grid-area: osam;
+}
+#devet{
+    grid-area: devet;
+}
+#nula{
+    grid-area: nula;
+}
+#jednako{
+    grid-area: jednako;
+}
+#saberi{
+    grid-area: saberi;
+}
+#oduzmi{
+    grid-area: oduzmi;
+}
+#puta{
+    grid-area: puta;
+}
